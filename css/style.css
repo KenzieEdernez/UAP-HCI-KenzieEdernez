@@ -1,21 +1,32 @@
 :root {
-    --bg-color: #050505;
-    --surface-color: #101010;
-    --surface-light: #1a1a1a;
-    --primary-color: #00f2ff;
-    --primary-dark: #00bbcc;
-    --accent-color: #d000ff;
-    --accent-dark: #a000cc;
-    --hover-border-color: #00ffbf; 
-    --text-color: #e0e0e0;
-    --text-muted: #a0a0a0;
+    /* New "Synthwave" Color Palette */
+    --bg-color: #0b0c15; /* Deep dark blue-grey */
+    --surface-color: #151621;
+    --surface-light: #1f202e;
+    
+    --primary-color: #ff2a6d; /* Neon Pink */
+    --primary-dark: #d41c50;
+    
+    --accent-color: #05d9e8; /* Neon Cyan */
+    --accent-dark: #00b8c7;
+    
+    --hover-border-color: #fff700; /* Bright Yellow for sharp interaction */
+    
+    --text-color: #e0e6ed;
+    --text-muted: #949aa3;
     --white: #ffffff;
     --error: #ff4d4d;
+    
     --transition-speed: 0.3s;
+    
+    /* Updated Gradients & Glows */
     --gradient-main: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     --gradient-hover: linear-gradient(135deg, var(--accent-color), var(--primary-color));
-    --glow-primary: 0 0 15px rgba(0, 242, 255, 0.4);
-    --glow-accent: 0 0 15px rgba(208, 0, 255, 0.4);
+    
+    /* Matches Pink (#ff2a6d) */
+    --glow-primary: 0 0 20px rgba(255, 42, 109, 0.5); 
+    /* Matches Cyan (#05d9e8) */
+    --glow-accent: 0 0 20px rgba(5, 217, 232, 0.5); 
 }
 
 * {
@@ -32,9 +43,10 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
+    /* Updated background pattern to match new theme */
     background-image: 
-        radial-gradient(circle at 10% 20%, rgba(0, 242, 255, 0.03) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(208, 0, 255, 0.03) 0%, transparent 40%);
+        radial-gradient(circle at 15% 25%, rgba(255, 42, 109, 0.05) 0%, transparent 45%),
+        radial-gradient(circle at 85% 75%, rgba(5, 217, 232, 0.05) 0%, transparent 45%);
     animation: fadeInPage 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
